@@ -50,8 +50,8 @@ def main():
     """Run the garden advice program."""
     print("Welcome to the Garden Advice App")
 
-    month = input("Enter the current month: ")
-    season = input("Enter the current season: ")
+    month = input("Enter the current month, for example January or June: ")
+    season = input("Enter the current season, spring, summer, autumn, or winter: ")
 
     print("\nMonth advice:")
     print(get_month_advice(month))
