@@ -16,7 +16,7 @@ SEASONS = ["spring", "summer", "autumn", "winter"]
 
 def get_month_advice(month):
     """Return gardening advice based on the month."""
-    month = month.lower()
+    month = month.strip().lower()
 
     if month in ["december", "january", "february"]:
         return "Water plants regularly and protect them from extreme heat."
@@ -32,7 +32,7 @@ def get_month_advice(month):
 
 def get_season_advice(season):
     """Return gardening advice based on the season."""
-    season = season.lower()
+    season = season.strip().lower()
 
     if season == "spring":
         return "Spring is ideal for planting, pruning, and preparing garden beds."
